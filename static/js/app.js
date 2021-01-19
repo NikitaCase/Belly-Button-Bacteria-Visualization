@@ -12,6 +12,7 @@
 
 
 var drop_down = d3.select("#select")
+var ul_demog = d3.select("#demographics")
 
 var arr = ['a', 'b', 'c', 'd', 'e']
 
@@ -21,6 +22,30 @@ for (var p = 0; p < arr.length; p++) {
     option.text(arr[p])
 
 }
+
+
+var dict =[{
+    a: 'aa', 
+    b: 'bb', 
+    c: 'cc', 
+    d: 'dd'
+}]
+
+function print_subject_data(){
+    dict.forEach((pair) => {
+        
+        
+        Object.entries(pair).forEach(([key, value]) => {
+            var li = ul_demog.append("li")
+            li.text(`${key} : ${value}`)
+        })
+
+
+    })
+}
+print_subject_data()
+
+
 
 
 /* <option value="t" >t</option> */

@@ -4,19 +4,14 @@
     <head>        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
         <!-- Bootstrap CSS -->
-     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
         <!-- Plotly JS -->
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
         <!-- Own style -->
         <link rel="stylesheet" href="static/css/style.css">
-
-        <title>nikita's template</title>
+        <title>Belly Button Biodiversity</title>
     </head>
 
 
@@ -39,26 +34,29 @@
 
             <div class="row">
                 <div class="col-md-4" id="subjects">
-                  <div class="well">
+                  <div class="white-box">
                     <h5>Test Subject ID No.:</h5>
                     <select id="select" name="select-subject">
-                      <option value="def">ID:</option>
+                      <option value="def">ID:</option><br>
 
                     </select>
                     <!-- <select id="select" onchange="optionChanged(this.value)"></select> -->
                   </div>
                   <br>
                   <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                    <div class="card-header"></div>
+                    <div class="card-header"><strong>Demographics</strong></div>
                     <div class="card-body">
-                      <h5 class="card-title">Light card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      
+                      
+                        <ul id="demographics">
+
+                        </ul>
                     </div>
                   </div>
           
                 </div>
 
-                <div class="col-md-4" id="hbar">
+                <div class="col-md-4" id="horizontal-bar">
 
                 </div>
 
@@ -74,8 +72,8 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12">
-
+                <div class="col-md-12" id="references">
+<a href="" target="_blank"></a>
                 </div>
             </div>
 

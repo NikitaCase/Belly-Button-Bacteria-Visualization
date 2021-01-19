@@ -2,3 +2,18 @@ body {
     background-color: teal;
     align-items: center;
   }
+
+/* 
+#2e2e2e not black 
+#003f5c dark teal
+#58508d burple 
+#bc5090 greyish magenta 
+#ff6361 peach 
+#ffa600 turmeric  */
+
+.white-box {
+    background-color :white; 
+    border-radius: 7px;
+    width: 100%; 
+    align-items: center;
+}
