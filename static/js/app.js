@@ -1,10 +1,11 @@
 // d3.json("data/samples.json").then(function (data) {console.log(data)})
 
-// d3.json("samples.json").then((data) => { console.log(data)});
+d3.json("data/samples.json").then((data) => { console.log(data) });
+
 
 // url = "https://github.com/NikitaCase/belly-biodiversity/blob/main/data/samples.json"
 
-// d3.json(url).then((data) => { console.log(data)});
+// d3.json(url).then((data) => { console.log(data) });
 
 
 // nothing above works :( 
@@ -24,17 +25,17 @@ for (var p = 0; p < arr.length; p++) {
 }
 
 
-var dict =[{
-    a: 'aa', 
-    b: 'bb', 
-    c: 'cc', 
+var dict = [{
+    a: 'aa',
+    b: 'bb',
+    c: 'cc',
     d: 'dd'
 }]
 
-function print_subject_data(){
+function print_subject_data() {
     dict.forEach((pair) => {
-        
-        
+
+
         Object.entries(pair).forEach(([key, value]) => {
             var li = ul_demog.append("li")
             li.text(`${key} : ${value}`)
