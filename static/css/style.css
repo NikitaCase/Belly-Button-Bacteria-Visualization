@@ -1,7 +1,26 @@
+/* main elements */
+
 body {
     background-color: teal;
     align-items: center;
-  }
+}
+
+
+/* div classes */
+
+.main-cont {
+    background-color: #f7f7f7;
+    border-radius: 6px;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 7px;
+    width: 250px;
+    align-items: center;
+    padding: 12px;
+}
+
 
 /* 
 #2e2e2e not black 
@@ -10,10 +29,3 @@ body {
 #bc5090 greyish magenta 
 #ff6361 peach 
 #ffa600 turmeric  */
-
-.white-box {
-    background-color :white; 
-    border-radius: 7px;
-    width: 100%; 
-    align-items: center;
-}
