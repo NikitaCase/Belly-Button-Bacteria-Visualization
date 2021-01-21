@@ -76,22 +76,71 @@ function plot_hbar(user_subject) {
         var all_samples = data.samples
 
         var subject_samples = all_samples.filter(row => row.id == user_subject)
-        var sample_values =
-
-            var otu_ids = subject_samples[0].otu_ids
-        var sorted_otu_ids = otu_ids.sort((a, b) => b - a)
-        var top_otu_ids = sorted_otu_ids.slice(0, 10)
+        var results = subject_samples[0]
+        var { sample_values, otu_labels, otu_ids } = results
 
 
+        var data_bubble = [{
+            x: otu_ids,
+            y: sample_values,
+            mode: 'markers',
+            marker: {
+              size: sample_values, 
+              color: otu_ids
+            }
+          }];
+          
+         var layout_bubble = {
+            title: 'bubble',
+            margin: {
+            l: 100,
+            r: 100,
+            t: 100,
+            b: 100
+          }
+          };
+
+        var config = {responsive: true}
+        
+          
+        Plotly.newPlot("bubble", data_bubble, layout_bubble, config);
+
+      
+        var samples_arr = []
+
+        for (var n=0; n<sample_values.length; n++) {
+            var dict = {}
+            dict.value = sample_values[n]
+            dict.otu_id = otu_ids[n]
+            dict.label = otu_labels[n]
+
+            samples_arr.push(dict)
+
+        }
+
+        var sorted_results = samples_arr.sort((a, b) => b.value - a.value)
+        var top_samples = sorted_results.slice(0, 10)
+        top_samples = top_samples.reverse()
+
+        console.log(sorted_results)
+
+        var bar_data =[{
+            x: top_samples.map( a => a.value), 
+            y: top_samples.map(a => `otu_id: ${a.otu_id}`), 
+            text: top_samples.map(a => a.label), 
+            name: "Belly Flora", 
+            type: "bar", 
+            orientation: "h"
+           
+        }]
+
+        var layout ={
+            title: "Belly Flora"
+        }
+
+        Plotly.newPlot("horizontal-bar", bar_data, layout)
 
 
-        hbar.html("")
-        console.log(otu_ids)
-
-
-        console.log(top_otu_ids)
-
-        // console.log(` samples ${subject_samples}`)
 
     })
 
