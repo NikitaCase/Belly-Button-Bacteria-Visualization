@@ -16,9 +16,13 @@ body {
 .white-box {
     background-color: white;
     border-radius: 7px;
-    width: 250px;
+    width: 100%;
     align-items: center;
     padding: 12px;
+}
+
+.chart-title {
+    text-align: center;
 }
 
 
