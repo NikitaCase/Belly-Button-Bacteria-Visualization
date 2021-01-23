@@ -1,4 +1,6 @@
-// guage 
+// Plot Guage
+// Uses variable from app.js
+
 function plot_guage(wfreq) {
     var data_guage = [{
         domain: { x: [0, 1], y: [0, 1] },
@@ -20,15 +22,9 @@ function plot_guage(wfreq) {
                 { range: [6, 7], color: "#8cbf88" },
                 { range: [7, 8], color: "#8abb8f" },
                 { range: [8, 9], color: "#85b48a" }
-
-
             ],
-
         }
     }];
 
-
-
-    // var layout_guage = { width: 100 % , height: 100 % , margin: { t: 0, b: 0 } };
     Plotly.newPlot("guage", data_guage)
-}
+};

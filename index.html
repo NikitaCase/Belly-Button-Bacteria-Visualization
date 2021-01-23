@@ -19,6 +19,7 @@
     <br>
     <br>
     <div class="container">
+        <!-- Jumbotron Page Header -->
         <div class="row">
             <div class="col-md-12 jumbotron text-center">
                 <h1>Belly Button Biodiversity Dashboard</h1>
@@ -32,15 +33,17 @@
             </div>
         </div>
 
+
+
         <div class="row main-cont">
+
             <!-- Area to select test subject id and display subjects' demographics  -->
             <div class="col-md-3" id="subjects">
                 <br>
                 <div class="white-box">
                     <h5>Test Subject ID No.:</h5>
                     <select id="select" name="select-subject">
-                      <option value="def">ID:</option><br>
-
+           
                     </select>
 
                 </div>
@@ -55,8 +58,8 @@
                         </ul>
                     </div>
                 </div>
-
             </div>
+
 
             <!-- Horizontal Bar Graph -->
             <div class="col-md-4">
@@ -69,6 +72,8 @@
                 <div id="horizontal-bar"> </div>
 
             </div>
+
+
             <!-- Guage -->
             <div class="col-md-5">
                 <br>
@@ -92,10 +97,11 @@
             </div>
         </div>
 
-        <div class="row main-cont">
-            <br>
-            <div class="white-box">
 
+        <!-- Bubble Chart Area -->
+        <div class="row main-cont" id="bubble-area">
+            <br><br>
+            <div class="white-box">
                 <h5 class="chart-title" id="bubble-title"></h5>
             </div>
             <div class="col-md-12">
@@ -109,8 +115,24 @@
         </div>
 
         <div class="row">
-            <div class="col-md-12" id="references">
-                <a href="" target="_blank"></a>
+            <div class="col-md-12">
+                <br>
+            </div>
+        </div>
+
+
+        <!-- References  -->
+        <div class="row main-cont">
+            <div class="col-md-12" id="references"><br>
+                <div class="white-box">
+                    <p>Reference: <a href="http://robdunnlab.com/projects/belly-button-biodiversity/">Belly Button Biodiversity</a>
+                    </p>
+                    <p>NC STATE
+                        <br>The Public Science Lab<br> Publications: Hulcr, J., Latimer, A. M., Henley, J. B., Rountree, N. R.**, Fierer, N., Lucky, A., Lowman, M. D., Dunn RR 2012.
+                        <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0047712">A jungle in there: bacteria in belly buttons are highly diverse, but predictable.</a>
+                        <i> PLoS ONE</i>7(11): e47712.
+                        <br> doi:10.1371/journal.pone.0047712</p>
+                </div><br>
             </div>
         </div>
 
@@ -120,21 +142,16 @@
     <br>
     <br>
 
+
     <!-- d3  -->
     <script src="https://d3js.org/d3.v6.min.js"></script>
-
-
-
-
     <!-- beautiful bootstrap -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <!-- my own js  -->
+    <!--  JS Pages for plotting data  -->
     <script src="static/js/app.js"></script>
     <script src="static/js/bonus.js"></script>
-
 </body>
 
 </html>

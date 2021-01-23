@@ -2,15 +2,28 @@
 
 body {
     background-color: teal;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     align-items: center;
 }
 
+a:link {
+    color: #003f5c;
+}
 
-/* div classes */
+a:visited {
+    color: #003f5c;
+}
+
+a:hover {
+    color: #c87d73;
+}
+
+
+/* div classes and ids*/
 
 .main-cont {
     background-color: #f7f7f7;
-    border-radius: 6px;
+    border-radius: 1rem;
 }
 
 .white-box {
@@ -25,11 +38,12 @@ body {
     text-align: center;
 }
 
+#bubble-area {
+    padding: 8px;
+}
 
-/* 
-#2e2e2e not black 
-#003f5c dark teal
-#58508d burple 
-#bc5090 greyish magenta 
-#ff6361 peach 
-#ffa600 turmeric  */
+.jumbotron {
+    background-color: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+    border-radius: 1rem;
+}
