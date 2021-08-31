@@ -6,7 +6,7 @@ The data displayed are from a scientific study of bacteria and arachaea from bel
 
 ### Page Link
 
-You can view the hosted page here: [Belly Button Biodiversity](https://nikitacase.github.io/plotly-challenge/) 
+You can view the hosted page here: [Belly Button Biodiversity](https://nikitacase.github.io/Belly-Button-Bacteria-Visualization/) 
 
 
 And here's a screenshot
